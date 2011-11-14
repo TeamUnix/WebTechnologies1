@@ -1,0 +1,28 @@
+/* CSS Document */
+#screen {
+	background-image:url(pic/background.png);
+	background-repeat:none, none;
+	background-position:top;
+	width:1024px;
+	/*height:768px;
+	font-family: Helvetica, Geneva, sans-serif;
+	margin: 0 auto;		/* Put website in the middle of the screen everything exept IE*/
+	align:center;		/* Put website in the middle of the screen in IE*/
+
+}
+
+#header {
+	height: 100px;
+	margin-left:60px;
+	font-size:40px;
+}
+
+#main {
+	height: 510px;
+	margin-left:100px;
+	margin-right:100px;
+}
+
+#dock {
+	height:158px;
+}
