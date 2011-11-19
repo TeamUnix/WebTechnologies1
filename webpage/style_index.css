@@ -9,14 +9,6 @@ body {
 	font-family:Verdana, Geneva, sans-serif;
 }
 
-body h1{
-	font-size: 48px;
-}
-
-body h3{
-	font-size: 12px;	
-}
-
 img#bg {
   position: absolute;
   top: 0;
@@ -26,38 +18,17 @@ img#bg {
   z-index: -999;
 }
 
-#header {
+#hub {
 	position: absolute;
-	top: 15px;
-	width: 700px;
-	height: 100px;
-	text-align:left;
-	text-transform: uppercase;
-/*	border: 1px solid #999; */
-}
-
-#header img{
-	float: left;
-	margin-top: -8px;
-	margin-left: 50px;	
-}
-#main {
-	position:absolute;
-	margin-left: 70px;
-	margin-top: 105px;
-	width: 900px;
-	border: 1px solid #999;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	left: 300px;
+	top: 300px;	
 }
 
 #dock {
 	position: absolute;
 	z-index: -10;
 	width: 854px;
-	background-image:url(pic/dock.png);
+	background-image:url(pic/dock_small.png);
 	background-repeat: no-repeat;
 	background-position: bottom;
 	bottom: 10px;
@@ -67,7 +38,7 @@ img#bg {
 
 #dock img{
 	float: left;
-	padding-right: 25px;
+	padding-right: 100px;
 	opacity:0.80;
 	filter:alpha(opacity=80); /* For IE8 and earlier */
 }
@@ -75,21 +46,6 @@ img#bg {
 #dock img:hover{
 	opacity:1.0;
 	filter:alpha(opacity=100); /* For IE8 and earlier */	
-}
-
-img#lock {
-	float: right;
-	padding-right: 50px;
-}
-
-#docknames {
-	color: #999;
-	position: absolute;
-	width: 120px;	
-	height: 80px;
-	bottom: 10px;
-	left: 860px;
-	font-size:11px;
 }
 
 #dot {
