@@ -46,6 +46,7 @@ img#bg {
 	margin-left: 70px;
 	margin-top: 105px;
 	width: 900px;
+	height: 65%;
 	border: 1px solid #999;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
@@ -69,6 +70,7 @@ img#bg {
 	float: left;
 	padding-right: 25px;
 	opacity:0.80;
+	border: none;
 	filter:alpha(opacity=80); /* For IE8 and earlier */
 }
 
@@ -85,7 +87,7 @@ img#lock {
 #docknames {
 	color: #999;
 	position: absolute;
-	width: 120px;	
+	width: 120px;
 	height: 80px;
 	bottom: 10px;
 	left: 860px;
