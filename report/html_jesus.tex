@@ -15,13 +15,17 @@ For small screen some limitations should be considered and applied to the design
 
 \subsubsection{Screen Size Proposal}
 Smaller screens will always be the tablets PCs or the ones that fits on pockets like smartphones. Keeping this in mind the most used screen sizes are:\\
-- 320x480 Screen Size ( eg. iPhone 3G )\\
+- 320x480 Screen Size ( eg. iPhone )\\ 	% Tested on: iPhone3G(ok),iPhone 4(ok),HTC desire(NOK)
 - 1024x600 Screen Size ( eg. Samsung Galaxy )\\
-- 1024x768 Screen Size ( eg. iPad 1)\\
-This is are the most common used smartphones and tablets, but the same device can have different resolution for example the case of iPhone3G (320x480) and iPhone4 ();
+- 1024x768 Screen Size ( eg. iPad)\\
 \\
-\textbf{Make some research on the most used devices / mobile browsers / screen sizes.}
-\\
+\textbf{List of the most popular smartphones}
+- Samsung Galaxy Player 5.0 (released 2011)\\
+- Samsung Galaxy S II (released 2011)\\
+- Apple iPhone 4S (released 2011)\\
+- Apple iPhone 4 (released 2010)\\
+- HTC Titan (released 2011)\\
+http://www.brighthand.com/best\_pdas/default.asp\\
 
 \subsubsection{Avoiding Images}
 All images are loaded to the memory, being this very limited on smartphones and tablet computers, its necessary to "hide" some images so the browser don't load them, this have to be done without compromising the user experience.\\
@@ -29,18 +33,19 @@ If images are needed they should be scaled down on a image editor (e.g. PhotoSho
 User should always be informed when the page is not completely loaded, this can be done using a preload script (script that hides the content of a page showing a loading bar until the page finish loading). This kind of scripts avoids a bad navigation experience to the user.\\
 
 \subsubsection{Re-Design}
-To make a page suitable for a small screen, the page have to be re-designed, in this case, only the CSS will be changed keeping the HTML tags intact.\\ This method of web development have advantages since the HTML only have the contents of the page and not any layout characteristics the space needed on the server is going to be smaller and the development is faster since only the CSS is changed to fit the content to a smaller screen.\\
-When the webpage is open, a CSS ( Cascade Style Sheet ) is loaded defining the layout for the entire page. After loading and designing the layout as a normal screen, the bowser will see the device characteristics, and change the already design layout to the correspondent one. This way we can change only the properties that are different for different screen sizes.\\
+To make a page suitable for a small screen, the page have to be re-designed, in this case, only the CSS will be changed and the HTML will be optimised for mobile web browsers.\\ 
+When the webpage is open, a CSS ( Cascade Style Sheet ) is loaded defining the layout that correspond to the screen size.
 
 \subsection{Page Layout}
 For a long time tables were used to make the webpages layout, this was made by nesting HTML table tags to create for example multi column pages, separate headers, main and footers, etc..\\ As solution, HTML should be used to the intellectual content of the page, while CSS determine how to represent the content to the user. This method of design improves the time of development since theres no more nested tables the HTML tags become more understandable, so create and redesigned a webpage becomes more easy and less time consuming, improves search engines rankings and files sizes diminished noticeable.\\
 
-\subsubsection{Handling Orientation}  % CSS / JAVASCRIPT
-CSS is able to get information about almost all newer smartphone devices. But still not able to distinguish from an iPhone3G and an iPhone 4, this will be a problem since both are the same device with different screen sizes.\\
-
-\subsubsection{Changing layout}	    % CSS / PHOTOSHOP
-Everything has a percentage....
-CSS must have the size of the screen otherwise it screws up for iPad.. keep tablets loading the normal screen...
+\subsubsection{Handling Orientation}  % CSS
+CSS is able to get information about almost all newer smartphone devices, information such as orientation and screen size is some information that is retrieved by the browser.\\
+% landscape of iPhone isn't designed yet for the front page.
+\subsubsection{Changing layout}	    % CSS / PHOTOSHOP / CSS media queries.
+Everything has a percentage....\\
+CSS must have the size of the screen otherwise it screws up for iPad..\\
+Keep tablets loading the normal screen...\\ %This should be done just the portrait its different.
 \subsubsection{Scaling Down}		    % CSS / PHOTOSHOP
 Scaling everything down on photoshop...
 Talk about image compression, GIF, PNG, JPEG...
