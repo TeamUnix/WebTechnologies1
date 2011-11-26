@@ -1,40 +1,41 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
     	<!--http://www.useragentman.com/blog/2010/03/09/cross-browser-css-transforms-even-in-ie/-->
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initital-scale=1, user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="reset.css" />
         <link rel="stylesheet" type="text/css" href="styles.css" />
 		<title>Battery - HIH E10</title>
 	</head>
 	<body>
-    <img src="pic/background.png" alt="background" id="bg" />
-
+   	<div id="bg">
+    	<img src="pic/background.png" alt="background"/>
+	</div>
         <div id="header">
-        	<img src="pic/header_bat.png" alt="HUB_module"/>
+        	<img src="pic/bat.png" alt="HUB_module"/>
             <h1>Battery</h1>
         </div>
 			
 		<div id="main">
-            	<iframe src="modules/battery/main.html" height="65%" width="900px" frameborder="0">You need a Frames Capable browser to view this content.</iframe> 
 		</div>
 
 		<div id="dock">
         	<a href="index.html"> <img src="pic/dock_home.png" 		alt="home" /> 			</a>
          	<a href="hub.html"> <img src="pic/dock_hub.png" 		alt="HUB_module"/> 		</a>
             <a href="wind.html"> <img src="pic/dock_wind.png"		alt="WIND_module"/> 	</a>
-            <a href="photo.html"> <img src="pic/dock_solar.png"		alt="solar_module"/> 	</a>
+            <a href="photo.html"> <img src="pic/dock_photo.png"		alt="solar_module"/> 	</a>
             <a href="battery.html"> <img src="pic/dock_bat.png" 	alt="battery_module"/>	</a>
         	<a href="caes.html"> <img src="pic/dock_caes.png" 		alt="caes_module"/> 	</a>
             <a href="index.html"> <img src="pic/dock_key_lock.png" 	alt="key_locked"  id="lock" /> 		</a>
 		</div>
-        <div id="dot">
-        	<img src="pic/dot.png" hspace="442px;" alt="dot" />
+        <div class="dot" id="dotbat">
+        	<img src="pic/dot.png" alt="dot" />
         </div>
         <div id="docknames">
         	<h3>EDE10 Team3</h3>
-        	<p>Dennis Madsen<br>
-        	Theis Christensen<br>
+        	<p>Dennis Madsen<br/>
+        	Theis Christensen<br/>
         	Paulo Miguel Fontes</p>
         </div>
 </body>
