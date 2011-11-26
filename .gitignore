@@ -18,6 +18,7 @@
 *.project
 *.texlipse
 *.DS_Store
+*.xml
 #
 
 #	VHDL
