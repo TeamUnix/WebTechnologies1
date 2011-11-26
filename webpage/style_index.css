@@ -9,6 +9,10 @@ body {
 	font-family:Verdana, Geneva, sans-serif;
 }
 
+h1 {
+	font-size: 40px;
+}
+
 #bg {	/*Empty ID for the background to satisfy W3 verificator*/
 }
 
@@ -63,6 +67,43 @@ body {
 	left: 65%;
 	top: 42%;
 }
+
+.energyboxes {
+	position:absolute;
+	height: 97px;
+	width: 200px;
+	background-repeat:no-repeat;
+	background-position:left;
+	top: 59%;
+	text-align:right;
+	padding-top:50px;
+	z-index: -200;
+}
+
+#bulb {
+	background-image:url(pic/bulb.png);
+	left: 6%;	
+}
+
+#coins {
+	background-image:url(pic/coins.png);
+	left: 34%;
+}
+
+#co2 {
+	background-image:url(pic/co2.png);
+	left: 62%;
+}
+
+.line {
+	position: absolute;
+	left: 5%;
+	width:90%;
+	height:auto;
+}
+
+#hline1 {top: 60%;}
+#hline2 {top: 78%;}
 
 #dock {
 	position: absolute;

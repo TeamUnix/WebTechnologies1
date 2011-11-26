@@ -14,7 +14,7 @@ body h1{
 }
 
 body h3{
-	font-size: 12px;	
+	font-size: 12px;
 }
 
 #bg {	/*Empty ID for the background to satisfy W3 verificator*/
@@ -28,9 +28,11 @@ body h3{
   height: 100%;
   z-index: -999;	/*Put image totally to the back*/
 }
+
 #header {
 	position: absolute;
 	width: 100%;
+	min-width:900px;
 	height: auto;
 	text-align:left;
 	text-transform: uppercase;
@@ -91,7 +93,7 @@ img#lock {
 #docknames {
 	color: #999;
 	position: absolute;
-	width: 100%;
+	width: 130px;
 	height: 80px;
 	bottom: 10px;
 	left: 860px;
