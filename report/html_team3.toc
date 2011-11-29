@@ -11,7 +11,12 @@
 \contentsline {subsection}{\numberline {3.4.1}CCS}{5}
 \contentsline {subsection}{\numberline {3.4.2}HTML}{5}
 \contentsline {chapter}{\numberline {4}Modules}{6}
-\contentsline {section}{\numberline {4.1}General Analysis}{6}
+\contentsline {section}{\numberline {4.1}Design Ideas}{6}
+\contentsline {section}{\numberline {4.2}The Design}{6}
+\contentsline {section}{\numberline {4.3}Code layout}{6}
+\contentsline {section}{\numberline {4.4}Code explanation}{6}
+\contentsline {subsection}{\numberline {4.4.1}CCS}{6}
+\contentsline {subsection}{\numberline {4.4.2}HTML}{6}
 \contentsline {chapter}{\numberline {5}Optimization}{7}
 \contentsline {section}{\numberline {5.1}General Analysis}{7}
 \contentsline {chapter}{\numberline {6}Conclusion}{8}
