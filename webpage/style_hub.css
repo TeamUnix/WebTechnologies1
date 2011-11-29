@@ -1,0 +1,38 @@
+#graph {
+	/*border: 1px solid #999;*/
+	position:inherit;
+	height: 200px;
+	width: 350px;
+}
+#status{
+	/*border: 1px solid #999;*/
+	position:inherit;
+	height: 200px;
+	left: 350px;
+	top: 15px;
+	width: 400px;
+}
+#status td {
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 12px;
+}
+.modules {
+	/*border: 1px solid #999;*/
+	text-align: center;
+	font-weight: bold;
+	position:inherit;
+	height: 120px;
+	top: 200px;
+	width: 90px;
+}
+#M1	{left: 10px;}
+#M2	{left: 100px;}
+#M3	{left: 190px;}
+#M4	{left: 280px;}
+#M5	{left: 370px;}
+#M6	{left: 460px;}
+#M7	{left: 550px;}
+#M8	{left: 640px;}
+#M9	{left: 730px;}
+#M10	{left: 820px;}
