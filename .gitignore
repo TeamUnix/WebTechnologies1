@@ -19,6 +19,7 @@
 *.texlipse
 *.DS_Store
 *.xml
+*.toc
 #
 
 #	VHDL

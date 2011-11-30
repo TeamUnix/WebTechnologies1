@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[10pt,a4paper]{report}
 \usepackage[latin1]{inputenc}
 \usepackage[english]{babel}
 \usepackage{amsmath}
@@ -11,36 +11,6 @@
 \usepackage{multirow}
 \usepackage{float}
 \usepackage{wrapfig}
-
-%Include and define  c code
-\usepackage{listings}
-\usepackage{color}
-\usepackage{textcomp}
-\definecolor{listinggray}{gray}{0.9}
-\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
-\lstset{
-	language=C,
-	keywordstyle=\bfseries\ttfamily\color[rgb]{0,0,1},
-	identifierstyle=\ttfamily,
-	commentstyle=\color[rgb]{0.133,0.545,0.133},
-	stringstyle=\ttfamily\color[rgb]{0.627,0.126,0.941},
-	showstringspaces=false,
-	basicstyle=\small,
-	numberstyle=\footnotesize,
-	numbers=left,
-	stepnumber=0,
-	numbersep=10pt,
-	tabsize=2,
-	breaklines=true,
-	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
-	breakatwhitespace=false,
-	aboveskip={1.5\baselineskip},
-  columns=fixed,
-  upquote=true,
-  extendedchars=true,
- frame=single,
- backgroundcolor=\color{lbcolor},
-}
 
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{5}
@@ -66,3 +36,50 @@
 \rfoot{\today}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
+
+
+
+%%%%%%%%%%%%%%%% LSTLISTING %%%%%%%%%%%%%%%%%%
+%Include and define  c code
+\usepackage{listings}
+\usepackage{color}
+\usepackage{textcomp}
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+
+\usepackage{xcolor}         % Text farbig markieren                     
+
+\definecolor{colKeys}{rgb}{0,0,1} 
+\definecolor{colIdentifier}{rgb}{1,0,0} 
+\definecolor{colComments}{rgb}{0,0.7,0.4} 
+\definecolor{colString}{rgb}{0,0.5,0} 
+
+\lstset{%
+    language=HTML,
+    float=hbp,% 
+    basicstyle=\ttfamily\small, % 
+    identifierstyle=\color{colIdentifier}, % 
+    keywordstyle=\color{colKeys}, % 
+    stringstyle=\color{colString}, % 
+    commentstyle=\color{colComments}, % 
+    columns=flexible, % 
+    tabsize=2, % 
+    frame=single, % 
+    extendedchars=true, % 
+    showspaces=false, % 
+    showstringspaces=false, % 
+    numbers=left, % 
+    numberstyle=\tiny, % 
+    breaklines=true, % 
+    backgroundcolor=\color{lbcolor}, % 
+    breakautoindent=true, % 
+    captionpos=b% 
+} 
+
+\lstdefinelanguage{CSS} 
+{morekeywords={color,background,margin,padding,font,weight,display,position,top,left,right,bottom,list,style,border,size,white,space,min,width},
+sensitive=false, 
+morecomment=[l]{//}, 
+morecomment=[s]{/*}{*/}, 
+morestring=[b]", 
+} 
