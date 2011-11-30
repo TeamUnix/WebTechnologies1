@@ -1,31 +1,32 @@
+/*GRAPH*/
 #graph {
-	/*border: 1px solid #999;*/
 	position:inherit;
 	height: 200px;
 	width: 350px;
 }
+/*STATUS*/
 #status{
-	/*border: 1px solid #999;*/
 	position:inherit;
 	height: 200px;
+	width: 400px;
 	left: 350px;
 	top: 15px;
-	width: 400px;
 }
 #status td {
 	padding-left: 10px;
 	font-weight: bold;
 	font-size: 12px;
 }
-.modules {
-	/*border: 1px solid #999;*/
+/*MODULES*/
+.modules {/*Classe settings*/
 	text-align: center;
 	font-weight: bold;
 	position:inherit;
 	height: 120px;
-	top: 200px;
 	width: 90px;
+	top: 200px;
 }
+/*Setting for single id*/
 #M1	{left: 10px;}
 #M2	{left: 100px;}
 #M3	{left: 190px;}
