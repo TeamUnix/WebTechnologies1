@@ -1,3 +1,96 @@
 \newpage
-\chapter{Optimization}
-\section{General Analysis}
+\section{Small Screens Optimisation}
+
+\subsection{Constrains and Limitations}
+On small screens horizontal scroll bar is not an option, since it breaks all the dynamics of the user experience, the processor is slower, the memory is limited so loading large file sizes is not a plus.\\
+\\
+\noindent \textbf{For small screen some limitations should be considered and applied to the design:}\\
+- One column layout only, this will avoid the horizontal scroll bar.\\
+- HTML optimised using efficient tags and attributes.\\
+- CSS optimised with efficient styles proprieties.\\
+- Minimise the amount of decorative images, or if needed, use of pre loaders (scripts that only show the page when fully loaded) so the user experience is not affected.\\
+- Write good alternative text (attribute 'alt')  for images, so in case the image is not needed an alternative text could be shown for example navigation icons.\\
+- Avoid effects that need mouse or keyboard events.\\
+- Avoid the use of Javascript on layout design since some mobile browsers may be set to block this scripts.
+
+\subsubsection{Screen Sizes Proposal}
+Smaller screens will always be the tablet computers or the ones that fits on pockets like smartphones.\\
+Keeping this in mind the most used screen sizes are:\\
+- 320x480 Screen Size ( eg. iPhone )\\ 	% Tested on: iPhone3G(OK),iPhone 4(OK)
+- 480x800 Screen Size (eg. HTC Titan, HTC Desire)\\ %HTC desire(NOK)
+- 1024x600 Screen Size ( eg. Samsung Galaxy )\\
+- 1024x768 Screen Size ( eg. iPad)\\
+\\
+\noindent \textbf{List of the most popular smartphones and tablet computers}\\
+- Samsung Galaxy Player 5.0 (released 2011)\\
+- Samsung Galaxy S II (released 2011)\\
+- Apple iPhone 4S (released 2011)\\
+- Apple iPhone 4 (released 2010)\\
+- HTC Titan (released 2011)\\
+
+\subsection{Mobile web development good practices}
+
+Mobile standards are not yet fully developed, but an initiative by the W3C (http://www.w3.org/Mobile/) describes some best practices for small devices web development. As HTML and CSS a Mobile checker can be found and used to identify possible threats for small screen devices.
+
+Some best practices for mobile web development have to be adapted when developing to the new smartphones and tablets computers, since they are detected as normal screens because of they higher pixel resolution and browsers such as Safari, Chrome, etc. The mobile W3C checker have to be used more as an guideline. 
+\\
+\\ \textbf{Content Selection:} on small screens all the data have to be more objective since all the information cannot be shown at once.\\
+\\ \textbf{Interaction method:} its important to determine the type of interaction that the device have with the user, because this will change the layout it self. In this proposal devices (and the most used now a days) the interaction would be touch based, all events are related with the user directly touching the screen with the finger or a pen, for this kind of interactions:\\
+- Event elements should be widely spaced from each others for the user to be able to touch them directly\\
+- Event elements have to be large enough to be early selected.\\
+\\\textbf{Use of client side capability detection:} Javascript and CSS media queries are the client side solutions for developers. Javascript may be blocked by the user so CSS media queries should be the first option. Server side device detection would be a best practice since the file size would get smaller and less requests would be made, but is not always possible.\\
+\\\textbf{Scrolling:} limit scrolling to one direction, this is archived, by re-designing the page for one column only and setting the width of the content for the device screen width.\\
+
+
+\newpage
+
+\subsection{Page Layout}
+
+For a long time tables were used to make the webpages layout, this was made by nesting HTML table tags to create for example multi column pages, separate headers, main and footers, etc..
+
+As solution, HTML should be used to the intellectual content of the page, while CSS determine how to represent the content to the user. This method of design improves the time of development since theres no more nested tables the HTML tags become more understandable, so create and redesigned a webpage becomes more easy and less time consuming, improves search engines rankings and files sizes diminished noticeable.
+
+Bellow pictures represents the same content using a layout suitable for iPhone in portrait orientation.
+
+\begin{figure}[h!]
+
+\caption{Generic layout proposal.}
+\end{figure}
+
+\subsubsection{Re-Design}
+
+To make a page suitable for a small screen, the layout should be re-designed, in this case, only the CSS will be changed and the HTML will be optimised for mobile web browsers.
+
+When the webpage is open, a CSS ( Cascade Style Sheet ) is loaded defining the layout that correspond to the screen size.
+
+\subsubsection{CSS Media Queries}  % CSS
+
+CSS is able to get information about almost all newer smartphone devices, information such as orientation and screen size is some information that is retrieved by the browser.
+
+\begin{lstlisting}
+	/* iPhone portrait*/
+	@media only screen and (max-width:320px) and (orientation:portrait)
+\end{lstlisting}
+
+This line of CSS media queries will ensure that screens with a maximum width of 320px and orientation portrait will use the layout defining between brackets. Media queries are conditions that defines if blocks of CSS properties are going to be loaded or not. This will be a great help to re-design a website layout since different pages can be already set to link to this style sheet file. \\
+
+\begin{table}[!h]
+	\begin{tabular}{| c | c | c |}
+	\hline
+	\textbf{Device} & \textbf{Orientation} & \textbf{Media Queries} \\ \hline
+	iPhone & Portrait & @media only screen and (max-width:320px) and (orientation:portrait)\\ \hline
+	iPhone & Landscape & @media only screen and (max-width:480px) and (orientation:landscape)\\ \hline
+	HTC & Portrait & @media only screen and (max-width:480px) and (orientation:portrait)\\ \hline
+	HTC & Landscape & @media only screen and (max-width:800px) and (orientation:landscape)\\ \hline
+	iPad & Portrait & @media only screen and (max-width:800px) and (orientation:portrait)\\ \hline
+	Galaxy & Portrait & @media only screen and (max-width:600px) and (orientation:portrait)\\
+	\hline
+	\end{tabular}
+	\caption{Media queries required for the most used tablet computers and smartphones.}
+\end{table}
+
+Media queries are inserted on the HTML link tags, so we ensure that only the right layout is loaded avoiding a bigger delivery file size.
+
+\subsubsection{User Experience}	    % CSS
+
+\input{smallreferences.tex}
