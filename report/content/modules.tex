@@ -8,5 +8,311 @@
 \section{Code explanation}
 
 \subsection{CCS}
+\subsubsection{styles}
+\begin{lstlisting}[language=CSS] 
+/*HEADER*/
+#header {
+	position: absolute;
+	width: 100%;
+	min-width:900px;
+	height: auto;
+	text-align:left;
+	text-transform: uppercase;
+}
+
+#header img{
+	float: left;
+	top: 10%;
+	margin-left: 50px;	
+}
+
+#header h1{ font-size: 48px; padding-top: 35px;}
+\end{lstlisting}
+
+\begin{lstlisting}[language=CSS] 
+/*MAIN WINDOW*/
+#main {
+	position:absolute;
+	left: 4%;
+	top: 20%;
+	width: 92%;
+	height: 60%;
+	border: 1px solid #999;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+\end{lstlisting}
+
+\begin{lstlisting}[language=CSS] 
+/*THE DOCK*/
+#dock {
+	position: absolute;
+	width: 854px;
+	background-image:url(pic/dock.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	bottom: 10px;
+	height: 100px;
+}
+
+#dock img {
+	float: left;
+	padding-right: 25px;
+	opacity:0.80;  /*All browsers exept IE*/
+}
+
+/*remove transparency when mouse over*/
+#dock img:hover { opacity:1.00;} /*All browsers exept IE*/
+
+/*change position of the locker to float right instead of left as the other link(s)*/
+img#lock { float: right; padding-right: 50px;}
+
+#docknames {
+	color: #999;
+	position: absolute;
+	width: 130px;
+	height: 80px;
+	bottom: 10px;
+	left: 860px;
+	font-size:11px;
+}
+
+#docknames h3{ font-size: 12px;}
+
+	/*set dot position to under the house (home)*/
+.dot {
+	position: absolute;
+	bottom: 3px;
+	z-index:1; /*put in front of everything else*/
+}
+
+#dothub {left: 138px;}
+#dotwind {left: 233px;}
+#dotphoto {left: 358px;}
+#dotbat {left: 466px;}
+#dotcaes {left: 578px;}
+\end{lstlisting}
+
+\subsubsection{style hub}
+\begin{lstlisting}[language=CSS] 
+#graph {
+	/*border: 1px solid #999;*/
+	position:inherit;
+	height: 200px;
+	width: 350px;
+}
+#status{
+	/*border: 1px solid #999;*/
+	position:inherit;
+	height: 200px;
+	left: 350px;
+	top: 15px;
+	width: 400px;
+}
+#status td {
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 12px;
+}
+.modules {
+	/*border: 1px solid #999;*/
+	text-align: center;
+	font-weight: bold;
+	position:inherit;
+	height: 120px;
+	top: 200px;
+	width: 90px;
+}
+#M1	{left: 10px;}
+#M2	{left: 100px;}
+#M3	{left: 190px;}
+#M4	{left: 280px;}
+#M5	{left: 370px;}
+#M6	{left: 460px;}
+#M7	{left: 550px;}
+#M8	{left: 640px;}
+#M9	{left: 730px;}
+#M10	{left: 820px;}
+\end{lstlisting}
+
+\subsubsection{reset}
+\begin{lstlisting}[language=CSS] 
+/* --------------------------------------------------------------
+
+   reset.css
+   * Resets default browser CSS.
+
+-------------------------------------------------------------- */
+
+html {
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* This helps to make newer HTML5 elements behave like DIVs in older browers */
+article, aside, details, figcaption, figure, dialog,
+footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+/* Line-height should always be unitless! */
+body {
+  line-height: 1.5;
+  background: white;
+}
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+/* float:none prevents the span-x classes from breaking table-cell display */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  float:none !important;
+}
+table, th, td {
+  vertical-align: middle;
+}
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after { content: ''; }
+blockquote, q { quotes: "" ""; }
+
+/* Remove annoying border on linked images. */
+a img { border: none; }
+
+/* Remember to define your own focus styles! */
+:focus { outline: 0; }
+\end{lstlisting}
 
 \subsection{HTML}
+
+\begin{lstlisting}
+<head>
+ 	<!--http://www.useragentman.com/blog/2010/03/09/cross-browser-css-transforms-even-in-ie/-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <meta name="viewport" content="width=device-width, initital-scale=1, user-scalable=no" />
+     <link rel="stylesheet" type="text/css" href="reset.css" />
+     <link rel="stylesheet" type="text/css" href="styles.css" />
+     <link rel="stylesheet" type="text/css" href="style_hub.css" />
+	<title>Energy Hub - HIH E10</title>
+</head>
+<body>
+	<div id="bg">
+ 	<img src="pic/background.png" alt="background"/>
+</div>
+     <div id="header">
+     	<img src="pic/hub.png" alt="HUB_module"/>
+         <h1>ENERGY HUB</h1>
+     </div>
+		
+	<div id="main">
+		<div id="graph">
+		<img src="pic/graph.png" alt="Power graph"/>
+		</div>
+		<div id="status">
+		<table>
+			<tr>
+				<td>Current power production</td><td>2.0 kW</td>
+			</tr>
+			<tr>
+				<td>Current power consumption</td><td>1.8 kW</td>
+			</tr>
+			<tr>
+				<td>Total power production</td><td>135.15 kWh</td>
+			</tr>
+			<tr>
+				<td>Average power production</td><td>1.7 kWh</td>
+			</tr>
+			<tr>
+				<td>Uptime</td><td>3 days 7 hours 34 minutes</td>
+			</tr>
+			<tr>
+				<td>Status</td><td>Running</td>
+			</tr>
+		</table>
+		</div>
+		
+		<div class="modules" id="M1">		
+		M1<br />
+		<a href="wind.html"> <img src="pic/dock_wind.png"		alt="WIND_module"/> 	</a>
+		</div>
+		<div class="modules" id="M2">
+		M2<br />
+		<a href="battery.html"> <img src="pic/dock_bat.png" 	alt="battery_module"/>	</a>
+		</div>
+		<div class="modules" id="M3">			
+		M3<br />
+		
+		</div>
+		<div class="modules" id="M4">			
+		M4<br />
+		<a href="photo.html"> <img src="pic/dock_photo.png"		alt="solar_module"/> 	</a>
+		</div>
+		<div class="modules" id="M5">			
+		M5<br />
+		
+		</div>
+		<div class="modules" id="M6">			
+		M6<br />
+		
+		</div>
+		<div class="modules" id="M7">			
+		M7<br />
+		<a href="caes.html"> <img src="pic/dock_caes.png" 		alt="caes_module"/> 	</a>
+		</div>
+		<div class="modules" id="M8">			
+		M8<br />
+		
+		</div>
+		<div class="modules" id="M9">			
+		M9<br />
+		
+		</div>
+		<div class="modules" id="M10">			
+		M10<br />
+		
+		</div>
+	</div>
+
+	<div id="dock">
+     	<a href="index.html"> <img src="pic/dock_home.png" 		alt="home" /> 			</a>
+      	<a href="hub.html"> <img src="pic/dock_hub.png" 		alt="HUB_module"/> 		</a>
+         <a href="wind.html"> <img src="pic/dock_wind.png"		alt="WIND_module"/> 	</a>
+         <a href="photo.html"> <img src="pic/dock_photo.png"		alt="solar_module"/> 	</a>
+         <a href="battery.html"> <img src="pic/dock_bat.png" 	alt="battery_module"/>	</a>
+     	<a href="caes.html"> <img src="pic/dock_caes.png" 		alt="caes_module"/> 	</a>
+         <a href="index.html"> <img src="pic/dock_key_lock.png" 	alt="key_locked"  id="lock" /> 		</a>
+	</div>
+     <div class="dot" id="dothub">
+     	<img src="pic/dot.png" alt="dot" />
+     </div>
+     <div id="docknames">
+     	<h3>EDE10 Team3</h3>
+     	<p>Dennis Madsen<br/>
+     	Theis Christensen<br/>
+     	Paulo Miguel Fontes</p>
+     </div>
+</body>
+\end{lstlisting}
