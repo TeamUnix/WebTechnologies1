@@ -47,7 +47,7 @@ h1 { font-size: 40px; }
 As the background is not proper for repeating in the y direction, it is instead stretched to fit the whole screen. As a background image cannot be stretched in the CSS file, the picture is instead added in the HTML file, in an 'empty div' (as this div only contains the background picture).
 \begin{lstlisting}
 <div id="bg">
-		<img src="pic/background.png" alt="background"/>
+		<img src="/pic/background.png" alt="background"/>
 </div>
 \end{lstlisting}
 The picture in the background div is stretched by setting the width and the height of it to 100\%. The picture is putted to the background by using z-index. The setup of which elements should be in front of others is setup using z-index, -999 is used to be sure that no elements is behind the background.
@@ -66,10 +66,10 @@ The picture in the background div is stretched by setting the width and the heig
 The connected modules all works as links to their module pages. The 'a' tag is used as a link to another page using the href attribute to a relative URL. The item which is used as the link is a picture showing the module. The module is inserted using the 'img' tag. 'src' specifies the URL of the image and the 'alt' attribute defines an alternative text if the picture cannot be found or shown. All other optional attributes is setup in the CSS file to keep the strict HTML coding.
 \begin{lstlisting}
 <div id="hub" class="boxbg">
-		<a href="hub.html"> <img src="pic/hub_big.png" alt="HUB Module"/> 	</a>
+		<a href="hub.html"> <img src="/pic/hub_big.png" alt="HUB Module"/> 	</a>
 </div>
 <div id="Mtopleft" class="boxbg">
-		<a href="wind.html"> <img src="pic/wind.png" alt="HUB Module"/> 		</a>
+		<a href="wind.html"> <img src="/pic/wind.png" alt="HUB Module"/> 		</a>
 </div>
 ...
 \end{lstlisting}
@@ -77,7 +77,7 @@ The position of the 5 modules (4 plus the hub) is set according to percentage of
 \begin{lstlisting}[language=CSS]
 .boxbg {
 	position:absolute;
-	background-image:url(pic/ybg.png);
+	background-image:url(/pic/ybg.png);
 	background-repeat:repeat-x;
 	height: 100px;
 	width: 150px;
@@ -127,7 +127,7 @@ The top and bottom border of the big div is drawn, to make a section split betwe
 	padding-top:30px;
 }
 	/*Position and picture of the bulb div*/
-#bulb { left: 2%; background-image:url(pic/bulb.png);}
+#bulb { left: 2%; background-image:url(/pic/bulb.png);}
 ...
 \end{lstlisting}
 
@@ -135,8 +135,8 @@ The top and bottom border of the big div is drawn, to make a section split betwe
 On the index page the dock contains only two items, the home button and a locker. At the time the locker links to the index page, but when Javacode is created, it will show an open locker when the user is logged in. Note here that the locker uses a special id, which is defined in the CSS file. The dot under the house shows the current position on the site. It is not used for anything specific on the index page but only there too keep the clean design. On the module pages it is shown under the selected device.
 \begin{lstlisting}
 <div id="dock">
-		<a href="index.html"> <img src="pic/dock_home.png" 		alt="home" /> 					</a>
-		<a href="index.html"> <img src="pic/dock_key_lock.png" 	alt="key_locked"  id="lock" /> 	</a>
+		<a href="index.html"> <img src="/pic/dock_home.png" 		alt="home" /> 					</a>
+		<a href="index.html"> <img src="/pic/dock_key_lock.png" 	alt="key_locked"  id="lock" /> 	</a>
 </div>
 <div id="dot">
 		<img src="pic/dot.png" alt="dot" />

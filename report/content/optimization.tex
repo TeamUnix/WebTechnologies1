@@ -116,8 +116,8 @@ File size have to be decreased, since small screen devices are slower, so all un
 \\\\
 \textbf{Image Elements}\\
 The \textit{img} tag creates a space on the page for the linked image to be loaded into the HTML page, this makes the webpage heavier to load.
-
 Image elements are then removed and added division elements instead, the images are loaded as background in the CSS document (explained in CSS section).
+All used images are scaled down, small devices requires smaller images and with the method use of loading images as background of divisions, images cannot be scale through CSS ( this should not happen as layout development ). This way the size of the document to load will be smaller, faster for the device to load and better user experience.
 \\\\
 \textbf{Anchor Elements}\\
 Anchor tags would be a good solution if text as link solution was choosen, but this would translate in a poor user experience. 

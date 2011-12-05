@@ -42,11 +42,11 @@ The "div" tag is used to make sections in a html document, it is then easy to se
 \begin{lstlisting}
 <div class="modules" id="M1">		
 	M1<br />
-	<a href="wind.html"> <img src="pic/dock_wind.png"		alt="WIND_module"/> 	</a>
+	<a href="wind.html"> <img src="/pic/dock_wind.png"		alt="WIND_module"/> 	</a>
 </div>
 <div class="modules" id="M2">
 	M2<br />
-	<a href="battery.html"> <img src="pic/dock_bat.png" 	alt="battery_module"/>	</a>
+	<a href="battery.html"> <img src="/pic/dock_bat.png" 	alt="battery_module"/>	</a>
 </div>
 \end{lstlisting}
 The class and ids is very handy in css. In the code below there is some settings for the class named "modules", these settings is for the whole class, this means that the two divisions above have the same style settings. From line 10 and down, in the code below some settings for the specific id. The css code here sets up some common style settings for the class and then the divisions is moved away from the left side as the id gets higher.
@@ -69,7 +69,7 @@ The class and ids is very handy in css. In the code below there is some settings
 Headlines in html can be made with headings tags (\textless h1\textgreater  to\textless h6\textgreater). The specific look of the headings is then defined in the css file. The h1 tag is used in the html code below.
 \begin{lstlisting}
 <div id="header">
-	<img src="pic/hub.png" alt="HUB_module"/>
+	<img src="/pic/hub.png" alt="HUB_module"/>
 	<h1>ENERGY HUB</h1>
 </div>
 \end{lstlisting}
@@ -115,8 +115,8 @@ The css for the table is seen below, here the space to the left side of each cel
 A css file that determine the design of html file needs to be include in the html, this is done in the line 2 to 4. If a html page has more than one css file, then it will use every file, but if one thing is defined in two files the file that are listed last will be used. Images is included in html as in line 6, the "img" tag says that this is an image, the "src" defines the source, where to find the file, the "alt" is alternative text if the file cannot be found. In line 7 a link is defined, the "a" makes a link the "href" is the reference where the link points to, the text "link" between the "a" tag is what is shown on the page, this could also be a image, then the image will work as a link.
 \begin{lstlisting}
 <!--include css files-->
-<link rel="stylesheet" type="text/css" href="reset.css" />
-<link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="/reset.css" />
+<link rel="stylesheet" type="text/css" href="../styles.css" />
 <link rel="stylesheet" type="text/css" href="style_hub.css" />
 <!--include css files-->
 <img src="pic/background.png" alt="background"/>
