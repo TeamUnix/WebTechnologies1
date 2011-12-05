@@ -5,25 +5,49 @@
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8"/>
 <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate " />
 <meta name="viewport" content="width=device-width; maximum-scale=1.0; user-scalable=0;"/>
-<link rel="stylesheet" type="text/css" media="only screen and (orientation:portrait)" href="module_portrait.css" />
-<link rel="stylesheet" type="text/css" media="only screen and (orientation:landscape)" href="module_landscape.css" />
+<link rel="stylesheet" type="text/css" media="only screen and (orientation:portrait)" href="../module_portrait.css" />
+<link rel="stylesheet" type="text/css" media="only screen and (orientation:landscape)" href="../module_landscape.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="style_hub.css" />
 <title>Energy Hub - HIH E10</title>
 </head>
 <body>
         <div id="header">
-        	<img src="pic/header_small/header_hub.png" alt="HUB_module"/>
+        	<img src="../../pic/header_small/header_hub.png" alt="HUB_module"/>
         	<h1>ENERGY HUB</h1>
         </div>
 			
-		<div id="main"></div>
+		<div id="main">
+        <div id="status">
+			<table>
+				<tr>
+					<td>Current power production</td><td>2.0 kW</td>
+				</tr>
+				<tr>
+					<td>Current power consumption</td><td>1.8 kW</td>
+				</tr>
+				<tr>
+					<td>Total power production</td><td>135.15 kWh</td>
+				</tr>
+				<tr>
+					<td>Average power production</td><td>1.7 kWh</td>
+				</tr>
+				<tr>
+					<td>Uptime</td><td>3 days 7 hours 34 minutes</td>
+				</tr>
+				<tr>
+					<td>Status</td><td>Running</td>
+				</tr>
+			</table>
+			</div>
+        </div>
 
 		<div id="dock">
-        	<div id="dock_home" onclick="location.href='index.html'"></div>
+        	<div id="dock_home" onclick="location.href='../../index.html'"></div>
          	<!--<div id="dock_hub" onclick="location.href='hub.html'"></div>-->
-            <div id="dock_wind" onclick="location.href='wind.html'"></div>
-            <div id="dock_photo" onclick="location.href='photo.html'"></div>
-            <div id="dock_bat" onclick="location.href='battery.html'"></div>
-        	<div id="dock_caes" onclick="location.href='caes.html'"></div>
+            <div id="dock_wind" onclick="alert('Not available on this web page version.')"></div>
+            <div id="dock_photo" onclick="alert('Not available on this web page version.')"></div>
+            <div id="dock_bat" onclick="alert('Not available on this web page version.')"></div>
+        	<div id="dock_caes" onclick="alert('Not available on this web page version.')"></div>
             <div id="dock_lock" onclick="alert('Not available on this web page version.')"></div>
 		</div>
 </body>
