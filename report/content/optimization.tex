@@ -146,29 +146,29 @@ All unnecessary image elements were substituted by division elements since this 
 \\After the re-design this is how the body section of the page looks like.
 \\
 \begin{lstlisting}
-	<body>
-	<div id="hub" onclick="location.href='hub.html'">
+<body>
+<div id="hub" onclick="location.href='hub.html'">
 	<div id="hub_img"></div>
+</div>
+<div id="modules">
+	<div id="Mtopleft" class="boxbg" onclick="location.href='modules/wind/'">
+		<div id="wind_img"></div>
 	</div>
-	<div id="modules">
-	<div id="Mtopleft" class="boxbg" onclick="location.href='wind.html'">
-	<div id="wind_img"></div>
+	<div id="Mtopright" class="boxbg" onclick="location.href='modules/photo/'">
+		<div id="photo_img"></div>
 	</div>
-	<div id="Mtopright" class="boxbg" onclick="location.href='photo.html'">
-	<div id="photo_img"></div>
+	<div id="Mbottomleft" class="boxbg" onclick="location.href='modules/caes/'">
+		<div id="caes_img"></div>
 	</div>
-	<div id="Mbottomleft" class="boxbg" onclick="location.href='caes.html'">
-	<div id="caes_img"></div>
-	</div>
-	<div id="Mbottomright" class="boxbg" onclick="location.href='battery.html'">
-	<div id="bat_img"></div>
-	</div>
-	</div>
-	<div id="dock">
-	<div id="dock_home" onclick="location.href='index.html'"></div>
-	<div id="dock_lock" onclick="location.href='index.html'"></div>
-	</div>
-	</body>
+	<div id="Mbottomright" class="boxbg" onclick="location.href='modules/battery'">
+		<div id="bat_img"></div>
+</div>
+</div>
+<div id="dock">
+<div id="dock_home" onclick="location.href='index.html'"></div>
+<div id="dock_lock" onclick="alert('Not available on this web page version.')"></div>
+</div>
+</body>
 \end{lstlisting}
 
 The file size and server requests decreased substantial, as it can be seen on the report from W3C mobileOk.
@@ -189,6 +189,8 @@ The file size and server requests decreased substantial, as it can be seen on th
 		\fbox{\includegraphics[width=0.8\textwidth]{images/mobileOk1.png}}
    	\caption{After re-design.}
 \end{figure}
+
+\newpage
 
 \section{CSS}  % CSS
 

@@ -41,12 +41,10 @@ Here the code will be described and shown in pieces
 The "div" tag is used to make sections in a html document, it is then easy to set up some style settings in the css file. Below is some code with two div tags. The divisions have the same class but two different ids.
 \begin{lstlisting}
 <div class="modules" id="M1">		
-	M1<br />
-	<a href="wind.html"> <img src="/pic/dock_wind.png"		alt="WIND_module"/> 	</a>
+	M1<br /><a href="../wind/"> <img src="/pic/dock_wind.png" alt="WIND_module"/> 	</a>
 </div>
 <div class="modules" id="M2">
-	M2<br />
-	<a href="battery.html"> <img src="/pic/dock_bat.png" 	alt="battery_module"/>	</a>
+	M2<br /><a href="../battery/"> <img src="/pic/dock_bat.png"  alt="battery_module"/>	</a>
 </div>
 \end{lstlisting}
 The class and ids is very handy in css. In the code below there is some settings for the class named "modules", these settings is for the whole class, this means that the two divisions above have the same style settings. From line 10 and down, in the code below some settings for the specific id. The css code here sets up some common style settings for the class and then the divisions is moved away from the left side as the id gets higher.
@@ -119,8 +117,8 @@ A css file that determine the design of html file needs to be include in the htm
 <link rel="stylesheet" type="text/css" href="../styles.css" />
 <link rel="stylesheet" type="text/css" href="style_hub.css" />
 <!--include css files-->
-<img src="pic/background.png" alt="background"/>
-<a href="index.html">link</a>
+<img src="/pic/background.png" alt="background"/>
+<a href="/">link</a>
 \end{lstlisting}
 In the css code it is possible to make design of the html code, in the css code below there is some commands that can be set. In the first line the position of the element is set, this can be set to absolute there the position is define from the top left corner of the browser, below it is set to inherit, this means that the position is define from the division, in the code below the top and left command determines the space from the top left corner in the division, this could also be bottom and right. The height and width sets the size of the division. The border command makes a boarder around the division with a width of 1px and the color \# 999. The border-bottom-left-radius is a css 3 tag. this make a round corner with a radius of 5px.
 \begin{lstlisting}[language=CSS]

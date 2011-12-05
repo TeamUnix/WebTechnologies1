@@ -128,7 +128,6 @@ The top and bottom border of the big div is drawn, to make a section split betwe
 }
 	/*Position and picture of the bulb div*/
 #bulb { left: 2%; background-image:url(/pic/bulb.png);}
-...
 \end{lstlisting}
 
 \subsection{Dock}
@@ -139,7 +138,7 @@ On the index page the dock contains only two items, the home button and a locker
 		<a href="index.html"> <img src="/pic/dock_key_lock.png" 	alt="key_locked"  id="lock" /> 	</a>
 </div>
 <div id="dot">
-		<img src="pic/dot.png" alt="dot" />
+		<img src="/pic/dot.png" alt="dot" />
 </div>
 \end{lstlisting}
 Opposite the background which was z-index'ed -999, the dot is indexed to 1 to bring it in front of everything else. In line 13 is defined a special id for the locker picture, the picture is set to position according to the right side of the div it is placed in. All links in the dock are slightly see through to create some simple graphic changes when the user holds the mouse over the icons. At mouse over the opacity is removed. The mouse over is done by using the img:hover command, where the img says that it is an image that the mouse can be held over.
@@ -147,7 +146,7 @@ Opposite the background which was z-index'ed -999, the dot is indexed to 1 to br
 #dock {
 	position: absolute;
 	width: 310px;
-	background-image:url(pic/dock_small.png);
+	background-image:url(/pic/dock_small.png);
 	background-repeat: no-repeat;
 	background-position: bottom;
 	bottom: 10px;
