@@ -1,0 +1,89 @@
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow:hidden;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+body h1{
+	font-size: 26px;
+}
+
+#header {
+	margin:0px;
+	position: absolute;
+	width: 100%;	
+	text-align:left;
+	text-transform: uppercase;
+	white-space:nowrap;
+}
+
+#header img{
+	float: left;
+}
+
+#main {
+	padding:0px;
+	position:absolute;
+	left: 0px;
+	top:15%;
+	width: 100%;
+	height: 100%;
+	border-top: 1px dashed #999;
+	border-bottom: 1px dashed #999;
+}
+
+#dock {	
+	position: absolute;
+	width: 100%;
+	background-image:url(pic/dock.gif);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 55px;
+	bottom: 0px; /* Sets the position of the element to the bottom of the page. */
+}
+
+#dock div{
+	width: 50px;
+	height:100%;
+	padding-left: 3px;
+	float:left;
+}
+
+#dock_home{
+	background-image:url(pic/header_small/header_home.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+}
+
+#dock_hub{
+	background-image:url(pic/header_small/header_hub.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+}
+
+#dock_wind{
+	background-image:url(pic/header_small/header_wind.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+}
+
+#dock_photo{
+	background-image:url(pic/header_small/header_solar.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+}
+
+#dock_bat{
+	background-image:url(pic/header_small/header_bat.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+}
+
+#dock_caes{
+	background-image:url(pic/header_small/header_caes.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+}

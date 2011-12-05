@@ -1,0 +1,9 @@
+#main{
+	display:inline;
+	text-align:center;
+	vertical-align:middle;
+}
+
+#main p{
+	vertical-align:middle;
+}

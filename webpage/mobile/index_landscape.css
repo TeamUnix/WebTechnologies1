@@ -1,0 +1,145 @@
+body {
+	overflow: hidden; /* Ensure that scrool bars are not show */
+    width: 100%;
+    height: 100%;
+	margin: 0px;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+.boxbg {
+	background-color:#FFC;
+	background-image:url(pic/ybg.png);
+	background-repeat:repeat-x;
+	border: 2px solid #999;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	width: 110px;
+	height:90px;
+}
+
+#modules{
+	position:absolute;
+	width: 100%;
+	height: auto;
+	text-align:center;
+	white-space:nowrap;
+	display:block;
+}
+
+#hub_img{
+	background-image:url(pic/hub.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	height:85px;
+	padding-top: 5px;
+}
+
+#Mtopleft {
+	display:inline-block; /* Used to align element side by side */
+}
+
+#Mtopright {
+	display:inline-block;  /* Used to align element side by side */
+}
+
+
+#Mbottomleft {
+	display:inline-block; /* Used to align element side by side */
+}
+
+#Mbottomright {
+	display:inline-block; /* Used to align element side by side */
+}
+
+#caes_img{
+	background-image:url(pic/caes.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	height:100%;
+}
+
+#photo_img{
+	background-image:url(pic/photo.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	height:100%;
+}
+
+#wind_img{
+	background-image:url(pic/wind.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	height:100%;
+}
+
+#bat_img{
+	background-image:url(pic/bat.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	height:100%;
+}
+
+/* Sets proprieties for iPhone */
+@media screen and (max-width:480px){
+
+#dock {	
+	display: none;
+}
+
+}
+
+
+/* Sets proprieties for HTC and Galaxy */
+@media only screen and (min-width:481px) and (max-width:800px){
+	
+#modules{
+	position:absolute;
+	width: 100%;
+	height: auto;
+	text-align:center;
+	white-space:nowrap;
+	display:block;
+	top:50%;
+	margin-top:-20%;
+}
+	
+#dock {	
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	background-image:url(pic/dock.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 85px;
+	bottom: 0px;
+}
+
+#dock_home{
+	background-image:url(pic/dock/dock_home.png);
+	background-repeat:no-repeat;
+	background-position:left;
+	height:75px;
+	width: 75px;
+}
+
+#dock_lock{
+	background-image:url(pic/dock/dock_key_lock.png);
+	background-repeat:no-repeat;
+	background-position:left;
+	height: 75px;
+	width: 75px;
+}
+
+#dock div {
+	padding-left: 10px;
+	float:left;
+	border: none;
+}
+}
+
+/* Hides body since this is not a supported portrait device. */
+@media screen and (min-width:801px){
+	body { display:none; }	
+}

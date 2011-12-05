@@ -1,0 +1,154 @@
+/* Body tag layout proprieties */
+body {
+	width:100%; /* Specify the width of the body to fit the device width, this is mostly used to center elements in the screen. */
+	height: 100%; /* Specify the height of th body to fit the device heigh, this will allow the use of percentages height on elements proprieties */
+	margin: 0px; /* Defines margin to 0px, no margin on the body */
+	font-family:Verdana, Geneva, sans-serif; /* Defines the font type, first choise will be Verdana and if not exists it will try Geneva */
+}
+
+/* Back ground box classname, this defines the classname boxbg is made with the character dot before the selector name. Elements on HTML have to be set with this classmate. */
+.boxbg {
+	position:absolute; /* Sets the position as absolute */
+	background-image:url(pic/ybg.png); /* Loads a image to the element background */
+	background-repeat:repeat-x; /* Repeats the image on the x axis */
+	/* Defines a border around the element and round the corners, this is not visible on IE but the layout is not break just the corners are not rounded. */
+	border: 2px solid #999; 
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	width: 149px; 
+	height: 80px; 
+	padding-bottom:10px; /* Gives a space between the bottom of the element and the inside of 10px */
+}
+
+#hub_img{
+	background-image:url(pic/hub.png);
+	background-repeat:no-repeat; /* Do not repeat background image in any axis */
+	background-position:center; /* Centers the background image */
+	height:85px;
+	padding-top: 5px; /* Spaces the background image from the top 5px */
+}
+
+#wind_img{
+	background-image:url(pic/wind.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	height:85px;
+}
+
+#photo_img{
+	background-image:url(pic/photo.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	height:85px;
+}
+
+
+#caes_img{
+	background-image:url(pic/caes.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	height:90px;
+}
+
+
+#bat_img{
+	background-image:url(pic/bat.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	height:85px;
+}
+
+#dock {	
+	position: absolute;
+	width: 100%;
+	background-image:url(pic/dock.gif);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 85px;
+	bottom: 0px; /* Sets the position of the element to the bottom of the page. */
+}
+
+#dock_home{
+	background-image:url(pic/dock/dock_home.png);
+	background-repeat:no-repeat;
+	background-position:left;
+	height:75px;
+	width: 75px;
+}
+
+#dock_lock{
+	background-image:url(pic/dock/dock_key_lock.png);
+	background-repeat:no-repeat;
+	background-position:left;
+	height:75px;
+	width: 75px;
+}
+
+#dock div {
+	padding-left: 10px;
+	float:left;
+	border: none;
+}
+
+/* Sets proprieties for iPhone */
+@media screen and (width:320px){ 
+
+#Mtopleft {
+	left: 5px;
+	top: 90px;
+}
+
+#Mtopright {
+	right: 5px;
+	top: 90px;
+}
+
+#Mbottomleft {
+	left: 5px;
+	top: 190px;
+}
+
+#Mbottomright {
+	right: 5px;
+	top: 190px;
+}
+}
+
+/* Sets proprieties for HTC and Galaxy */
+@media screen and (min-width:321px) and (max-width:480px){ 
+#Mtopleft {
+	left:50%;
+	top:50%;
+	margin-left: -35%;
+	margin-top: -25%;
+}
+
+#Mbottomleft {
+	left:50%;
+	top:50%;
+	margin-left: -35%;
+	margin-top: 0;
+}
+
+#Mtopright {
+	right:50%;
+	top:50%;
+	margin-right: -35%;
+	margin-top: -25%;
+}
+
+#Mbottomright {
+	right:50%;
+	top:50%;
+	margin-right: -35%;
+	margin-top: 0;
+}
+
+}
+
+/* Hides body since this is not a supported portrait device. */
+@media screen and (min-width:481px){ 
+ body { display:none; }
+}
