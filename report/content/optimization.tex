@@ -1,6 +1,6 @@
 \chapter{Small Screens Optimisation}
 \textit{Paulo}\\
-This sections is about the optimisation of all the interface for small screen devices. A different technic is needed for web developing to mobile browsers. All the process of optimisation will be described. This web site can be seen by a small device at \textbf{http://ehub.threee.dk/mobile/}
+These sections is about the optimisation of all the interface for small screen devices. A different technic is needed for web developing to mobile browsers. All the process of optimisation will be described. This web site can be seen by a small device at \textbf{http://ehub.threee.dk/mobile/}
 \section{Design Ideas}
 
 Bellow pictures represents the same content using a layout suitable for small devices in portrait and landscape orientation.
@@ -21,11 +21,11 @@ Bellow pictures represents the same content using a layout suitable for small de
 \section{Constrains and Limitations}
 On small screens horizontal scroll bar is not an option, since it breaks all the dynamics of the user experience, the processor is slower, the memory is limited so loading large file sizes is not a plus.\\
 \\
-\noindent \textbf{For small screen some limitations should be considered and applied to the design:}\\
+\noindent \textbf{For small screens some limitations should be considered and applied to the design:}\\
 - One column layout only, this will avoid the horizontal scroll bar.\\
 - HTML optimised using efficient tags and attributes.\\
 - CSS optimised with efficient styles proprieties.\\
-- Minimise the amount of decorative images, or if needed, use of pre loaders (scripts that only show the page when fully loaded) so the user experience is not affected.\\
+- Minimise the amount of decorative images, or if needed, use of pre loaders (scripts that only shows the page when it is fully loaded) so the user experience is not affected.\\
 - Write good alternative text (attribute 'alt')  for images, so in case the image is not needed an alternative text could be shown for example navigation icons.\\
 - Avoid effects that need mouse or keyboard events.\\
 - Avoid the use of Javascript on layout design since some mobile browsers may be set to block this scripts.
@@ -62,16 +62,16 @@ Some best practices for mobile web development have to be adapted when developin
 \\\textbf{Server Requests:} decrease the number of server requests, this can be done by avoiding putting image elements on the HTML file.
 \\\\
 Some more mobile web practices taken into consideration can be found at:
- \textit{http://www.w3.org/2007/02/mwbp\_flip\_cards} , this flip cards illustrate all the process of design and test of a web application/page on a small screen device keeping the standard for the most used browsers.
+\\ \textit{http://www.w3.org/2007/02/mwbp\_flip\_cards}  \\This flip cards illustrate all the process of design and test of a web application/page on a small screen device keeping the standard for the most used browsers.
 
 \section{HTML}
 
 For a long time tables were used to make the webpages layout, this was made by nesting HTML table tags to create for example multi column pages, separate headers, main and footers, etc..
 
-As solution, HTML should be used to the intellectual content of the page, while CSS determine how to represent the content to the user. This method of design improves the time of development since there is no more nested tables the HTML tags become more understandable, so create and redesigned a webpage becomes more easy and less time consuming, improves search engines rankings and files sizes diminished noticeable.
+As solution, HTML should be used to the intellectual content of the page, while CSS determine how to represent the content to the user. This method of design improves the time of development since there is no more nested tables the HTML tags become more understandable, so create and redesigned a webpage becomes easier and less time consuming, improves search engines rankings and files sizes diminished noticeable.
 
 \subsection{Head} 
-Using W3C mobile as guide line, the use of the doctype mobile 1.2 is advised since this will keep the web page suitable for all kind of small screen devices and browsers. DOCTYPE is the first code line in the HTML document, it defines the document version and rules in which the HTML is written, this information is necessary so that the browser knows what kind of document to expect and correctly load the web page. 
+Using W3C mobile as guideline, the use of the doctype mobile 1.2 is advised since this will keep the web page suitable for all kind of small screen devices and browsers. DOCTYPE is the first code line in the HTML document, it defines the document version and rules in which the HTML is written, this information is necessary so that the browser knows what kind of document to expect and correctly load the web page. 
 
 \begin{lstlisting}
 	<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
@@ -87,7 +87,7 @@ Meta tags in HTML is the information data, usually specifies a page description 
 
 One of the data that can be set on meta tags is 'Cache-Control', this will help the device to load the web page faster and doing less requests to the server, this is a plus when the content of the web page is static, the request is made to the server and the server sees if it have the same answer as before in cache and forward the same content, this decrease the traffic between the server and the client. This method of setting HTML headers for cache is not the most reliable since some browsers might not read this meta tags, for a reliable caching-control a server-side HTTP headers script should be implemented.
 
-HTML only contains the intellectual value of the web page, and no layout setting, so the layout setting are defined in CSS ( Cascade Style Sheet ), this are linked to the HTML page trough the tag \textit{\textless link \textgreater}.  Link tags defines the relationship between the HTML file and an external file, the mostly used and supported in all browsers are CSS documents.
+HTML only contains the intellectual value of the web page, and no layout setting, so the layout setting are defined in CSS ( Cascade Style Sheet ), these are linked to the HTML page trough the tag \textit{\textless link \textgreater}.  Link tags defines the relationship between the HTML file and an external file, the mostly used and supported in all browsers are CSS documents.
 
 \begin{lstlisting}
 	<link rel="stylesheet" type="text/css" media="only screen and (orientation:portrait)" href="index_portrait.css" />
@@ -125,7 +125,7 @@ Anchor tags would be a good solution if text as link solution was choosen, but t
 Anchor tags are removed and an on-click attribute is added to the \textit{div} this way is still possible to navigate the website and less HTML elements have to be loaded. 
 \\\\
 \textbf{Division Elements}\\
-Division elements (\textit{div}) are often used to group blocks of elements, this are devisions or sections in a page, this are the most used tag to shape the layout of a web page.
+Division elements (\textit{div}) are often used to group blocks of elements, these are devisions or sections in a page, this are the most used tag to shape the layout of a web page.
 
 Working with mobile 1.2 doctype have some limitations, it doesn't allow the use of the anchor tags \textit{a} for division elements as it was for image elements.
 
@@ -194,10 +194,9 @@ The file size and server requests decreased substantial, as it can be seen on th
 
 \section{CSS}  % CSS
 
-CSS stands for cascading style sheet, this documents describes the way a web page or XML document are shown to the user. It defines proprieties for the markup elements of an XHTML/HTML document.
+CSS stands for cascading style sheet, these documents describes the way a web page or XML document is shown to the user. It defines proprieties for the markup elements of an XHTML/HTML document.
 \\
 The new version CSS3, is able to get information about almost all newer smartphone devices, information such as orientation and screen size is some information that is retrieved by the browser. This is used on the media condition, where the browser will load only the needed CSS document.
-
 \subsection{Media Queries}
 
 \begin{lstlisting}
@@ -234,4 +233,4 @@ CSS document is commented for better explanation on the overall layout.
 \\
 \\The modules re-design web page follows the same criteria, just the layout is changed with different proprieties.
 \\
-\\All CSS and HTML documents are in APPENDIX with comments for better understand and further development.
+\\All CSS and HTML documents can be found in the APPENDIX with comments for better understand and further development.

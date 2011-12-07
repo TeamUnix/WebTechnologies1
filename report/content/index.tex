@@ -28,7 +28,7 @@ The background is chosen to be white/grey to keep it simple and not steal focus 
 	\item Production (shown in an alternative way).
 	\item Menu dock.
 \end{itemize}
-Apples operation system has inspired to the creation of the dock, which is rather different than most other webpages, where the menu bar is normally placed in the top-center or in the left side. The production is shown in non-technical terms to make it more interesting for high-school students or similar, than terms like kW, kWh, Joules. In the top is shown the different modules connected which also works as links to the modules page, where a detailed description of the module can be found. Energy bars, amount of connected modules and status of them will be implemented using Javascript, but so far the page only works as a dummy one, where the style of it can be seen an the way of jumping between between pages works.  
+Apples operation system has inspired to the creation of the dock, which is rather different than most other webpages, where the menu bar is normally placed in the top-center or in the left side. The production is shown in non-technical terms to make it more interesting for high-school students or similar, than terms like kW, kWh, Joules. In the top is shown the different modules connected which also works as links to the modules page, where a detailed description of the module can be found. Energy bars, amount of connected modules and status of them will be implemented using Javascript, but so far the page only works as a static one, where the style of it can be seen an the way of jumping between between pages works.  
 \section{Code layout}
 As the site shall be written in strict XHTML, the HTML files will only contain all div's, text and it is also here it is specified which things that should work as links. The style sheet then contains everything else, sizes and positions of divs, pictures, text etc.
 \\Doctype and meta tags are described in the next chapter.
@@ -73,7 +73,7 @@ The connected modules all works as links to their module pages. The 'a' tag is u
 </div>
 ...
 \end{lstlisting}
-The position of the 5 modules (4 plus the hub) is set according to percentage of the browser to make use of the whole browser window. Each div has both a class, where general things for the 5 modules are defines, and an id defining the position of each module. The class of the modules sets the background of the modules and repeats it in the x direction. A border around the module divs is also defined with line size 2px and a grey color. The corners of the box is rounded, this does however not work in IE versions older than 9.
+The position of the 5 modules (4 plus the hub) is set according to percentage of the browser to make use of the whole browser window. Each div has both a class, where general things for the 5 modules are defines, and an id defining the position of each module. The class of the modules sets the background of the modules and repeats it in the x direction. A border around the module divs is also defined with line size 2px and a grey color. The corners of the box is rounded (this does not work in IE versions older than 9).
 \begin{lstlisting}[language=CSS]
 .boxbg {
 	position:absolute;
@@ -141,7 +141,7 @@ On the index page the dock contains only two items, the home button and a locker
 		<img src="/pic/dot.png" alt="dot" />
 </div>
 \end{lstlisting}
-Opposite the background which was z-index'ed -999, the dot is indexed to 1 to bring it in front of everything else. In line 13 is defined a special id for the locker picture, the picture is set to position according to the right side of the div it is placed in. All links in the dock are slightly see through to create some simple graphic changes when the user holds the mouse over the icons. At mouse over the opacity is removed. The mouse over is done by using the img:hover command, where the img says that it is an image that the mouse can be held over.
+Opposite the background which was z-index'ed -999, the dot is indexed to 1 to bring it in front of everything else. In line 13 is defined a special id for the locker picture, the picture is set to position according to the right side of the div it is placed in. All links in the dock are slightly see through to create some simple graphic changes when the user holds the mouse over the icons. At mouse over the opacity is removed. The mouse over is done by using the img:hover command, where the 'img' tells that it is an image which the mouse can be held over.
 \begin{lstlisting}[language=CSS]
 #dock {
 	position: absolute;

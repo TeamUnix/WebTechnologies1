@@ -2,7 +2,7 @@
 \chapter{Modules}\textit{Theis.}\\
 This chapter is about the information web page for the energy hub. The purpose of this web page and the thought about designing it, and how it will work is described here.
 \section{Design Ideas}
-The purpose of the hub web page is to see what type of module that is connected to which ports, and to see the production versus the consumption. It is also possible to see some status of the energy hub. The design shall be simple, and it have to be a web page without to many things to distract the users. To fulfil this, there have been made 3 regions in the page window, one with the graph, one for data and status, and a third one for the modules.\\
+The purpose of the hub web page is to see what type of module that is connected to which ports, and to see the production versus the consumption. It is also possible to see the status of the energy hub. The design shall be simple, and it have to be a web page without to many things to distract the users. To fulfill this, there have been made 3 regions in the page window, one with the graph, one for data and status, and a third one for the modules.\\
 To keep dynamic on the homepage, the design from the index page, has been kept through the web site. The background color is the same, and the dock in the bottom is kept on all sub pages. A big headline is made with an icon, to show what page the user is looking at.
 \section{The Design}
 
@@ -14,7 +14,7 @@ To keep dynamic on the homepage, the design from the index page, has been kept t
    	\caption{Picture of the hub page.}
    	\label{fig:hub_page_design}
 \end{figure}
-This is how the design turns out. It fulfills the purpose and the requirements for the design (simple and easy to navigate).
+This is how the design turned out. It fulfills the purpose and the requirements for the design (simple and easy to navigate).
 \section{Code layout}
 Here is a description of the code settings and layout that is used for the web page.
 \subsection{Doctype}
@@ -36,7 +36,7 @@ The meta tags tell something about the data on the page. In the first line the c
 \end{lstlisting}
 
 \section{Code explanation}
-Here the code will be described and shown in pieces
+Here the code will be described and shown in pieces.
 \subsection{Division}
 The "div" tag is used to make sections in a html document, it is then easy to set up some style settings in the css file. Below is some code with two div tags. The divisions have the same class but two different ids.
 \begin{lstlisting}
@@ -110,7 +110,7 @@ The css for the table is seen below, here the space to the left side of each cel
 \end{lstlisting}
 
 \subsection{General tags}
-A css file that determine the design of html file needs to be include in the html, this is done in the line 2 to 4. If a html page has more than one css file, then it will use every file, but if one thing is defined in two files the file that are listed last will be used. Images is included in html as in line 6, the "img" tag says that this is an image, the "src" defines the source, where to find the file, the "alt" is alternative text if the file cannot be found. In line 7 a link is defined, the "a" makes a link the "href" is the reference where the link points to, the text "link" between the "a" tag is what is shown on the page, this could also be a image, then the image will work as a link.
+A css file that determine the design of html file needs to be include in the html, this is done in line 2 to 4. If a html page has more than one css file, then it will use every file, but if one thing is defined in two files the file that are listed last will be used. Images is included in html as in line 6, the "img" tag says that this is an image, the "src" defines the source, where to find the file, the "alt" is alternative text if the file cannot be found. In line 7 a link is defined, the "a" makes a link the "href" is the reference where the link points to, the text "link" between the "a" tag is what is shown on the page, this could also be a image, then the image will work as a link.
 \begin{lstlisting}
 <!--include css files-->
 <link rel="stylesheet" type="text/css" href="/reset.css" />
@@ -120,7 +120,7 @@ A css file that determine the design of html file needs to be include in the htm
 <img src="/pic/background.png" alt="background"/>
 <a href="/">link</a>
 \end{lstlisting}
-In the css code it is possible to make design of the html code, in the css code below there is some commands that can be set. In the first line the position of the element is set, this can be set to absolute there the position is define from the top left corner of the browser, below it is set to inherit, this means that the position is define from the division, in the code below the top and left command determines the space from the top left corner in the division, this could also be bottom and right. The height and width sets the size of the division. The border command makes a boarder around the division with a width of 1px and the color \# 999. The border-bottom-left-radius is a css 3 tag. this make a round corner with a radius of 5px.
+In the css code it is possible to make design of the html code, in the css code below there is some commands that can be set. In the first line the position of the element is set, this can be set to absolute, then the position is define from the top left corner of the browser, below it is set to inherit, which means that the position is defined from the division, in the code below the top and left command determines the space from the top left corner in the division, this could also be bottom and right. The height and width sets the size of the division. The border command creates a boarder around the division with a width of 1px and the color \# 999. The border-bottom-left-radius is a css 3 tag. This makes a round corner with a radius of 5px.
 \begin{lstlisting}[language=CSS]
 position:inherit;
 height: 200px;
